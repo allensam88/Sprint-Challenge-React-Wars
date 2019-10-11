@@ -22,10 +22,19 @@ const StyledCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
+const StyledHeader = styled.h1`
+  color: #F9E60A;
+  padding: 25px;
+  text-align: center;
+  background-color: black;
+`;
 
 	return (
 		<div>
-			<h1>Star Wars ID Cards</h1>
+      <StyledHeader>
+        <h1>STAR WARS ID CARDS</h1>
+        <h3>May the Force be with you...</h3>
+      </StyledHeader>
       <StyledCardContainer>
 			  {characters.map((character, index) => {
 				  return <CharacterCard key={index} character={character} />

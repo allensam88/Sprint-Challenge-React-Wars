@@ -8,11 +8,11 @@ const CharacterCard = props => {
     
     <Col xs='6'>
       <Row>
-      <Card body style={{ color: 'white', backgroundColor: 'blue', borderColor: '#333', margin: '5%' }}>
+      <Card body style={{ backgroundColor: '#D9DE8E', borderColor: '#333', margin: '10%', padding: '10px' }}>
         <CardBody>
-          <CardTitle tag='h1' style={{fontStyle: 'italic'}}>{props.character.name}</CardTitle>
-          <CardSubtitle tag='h3' style={{padding: '20px 0', textDecoration: 'underline'}}>Biometrics</CardSubtitle>
-          <CardText style={{ lineHeight: '8px'}}>
+          <CardTitle tag='h1' style={{ color: '#B02221', textAlign: 'center', fontStyle: 'italic', backgroundColor: '#10193A', padding: '10px', border: '1px solid black', borderRadius: '25px'}}>{props.character.name}</CardTitle>
+          <CardSubtitle tag='h4' style={{margin: '10px 0', padding: '10px 5px', textAlign: 'center', border: '1px solid black', color: '#10193A', backgroundColor: '#B02221'}}>Biometric Statistics</CardSubtitle>
+          <CardText style={{ lineHeight: '8px', padding: '15px', border: '1px solid black', backgroundColor: '#10193A', color: '#B02221', fontWeight: 'bold'}}>
             <p>Height (cm): {props.character.height}</p>
             <p>Weight (kg): {props.character.mass}</p>
             <p>Hair: {props.character.hair_color}</p>
