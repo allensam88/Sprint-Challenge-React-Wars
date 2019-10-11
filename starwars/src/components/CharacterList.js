@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../index.css';
 import CharacterCard from './CharacterCard';
+import styled from 'styled-components';
 
 const CharacterList = () => {
 	const [characters, setCharacters] = useState([]);
@@ -17,13 +18,19 @@ const CharacterList = () => {
 
 	}, []);
 
+const StyledCardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 	return (
 		<div>
-			<h1>This is the CharacterList component</h1>
-
-			{characters.map((character, index) => {
-				return <CharacterCard key={index} character={character} />
-			})}
+			<h1>Star Wars ID Cards</h1>
+      <StyledCardContainer>
+			  {characters.map((character, index) => {
+				  return <CharacterCard key={index} character={character} />
+        })}
+      </StyledCardContainer>
 		</div>
 	)
 }
