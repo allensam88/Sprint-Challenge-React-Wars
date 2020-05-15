@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a JavaScript library tool that is very handy for creating websites that need to change with new content.  It allows components to be compartmentalized very easily and for an app to render new changes based on user interactions or changing data.  It was invented by Facebook to accommodate the rapidly changing content such as the newsfeed.  Everything is composed of smaller component building blocks that can be assembled into larger pieces.
+
 - [ ] What does it mean to _think_ in react?
+
+This probably means a few things: 1) to think in terms of parent/child relationships and how properties can be passed down from parent to child, based on import/exports, 2) how different pieces of an app can be broken up into smaller components, 3) how ‘state’ can be managed for rendering new content to the DOM based on some action, and 4) how JSX is similar to HTML, but requires some changes in syntax.  
 
 - [ ] Describe state.
 
+State is the current content condition of a website or app based upon some event or action that triggers a change in state.  There is an initial setting for state when the app is first rendered, but then as the user interacts with the app, the state may change based upon event triggers, such as clicking a button, typing, selecting a toggle menu, etc.  It allows dynamic responsive changes to happen and the DOM render data will change based upon that.
+
 - [ ] Describe props.
 
+Props or properties are like parameter variables that can be passed from a parent component file to a child component file.  It allows content to be accessed at a deeper level within an app.  It is possible to keep drilling down and passing the same props deeper and deeper, to the grandchild, great-grandchild, etc.  In particular, it allows the axios.get response data to be transferred to the components that need to render that specific content.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects can be both positive and negative, depending on if you intended them to happen or if they are happening by accident unintentionally.  In order to take advantage of side effects, useEffect can be used to manage which triggers can be used for new effects.
 
 ## Project Set Up
 
